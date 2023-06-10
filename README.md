@@ -1,11 +1,11 @@
-About r-modules
-===============
+About r-modules-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modules-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/wahani/modules
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modules-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides modules as an organizational unit for source code. Modules enforce to be more rigorous when defining dependencies and have a local search path. They can be used as a sub unit within packages or in scripts.
 
