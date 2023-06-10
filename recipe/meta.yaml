@@ -1,4 +1,4 @@
-{% set version = '0.10.0' %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modules_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modules/modules_{{ version }}.tar.gz
-  sha256: 177dd2042385285aff968b118a1c7a32188fa12cc727866416a487733deff818
+  sha256: 77c3c18e4a81d6f53dbc16d09a4c6634eff0ec301e36f1b398585ce666824cf8
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,12 +37,10 @@ test:
 about:
   home: https://github.com/wahani/modules
   license: MIT
-  summary: Provides modules as an organizational unit for source code. Modules enforce to be
-    more rigorous when defining dependencies and have a local search path. They can
-    be used as a sub unit within packages or in scripts.
+  summary: Provides modules as an organizational unit for source code. Modules enforce to be more rigorous when defining dependencies and have a local search path. They can be used as a sub unit within packages or in scripts.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
