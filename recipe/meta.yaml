@@ -1,6 +1,5 @@
 {% set version = "0.13.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-modules
@@ -13,8 +12,7 @@ source:
   sha256: 553b42f26627db265de5279f93f4b1f9d141d67e51c8f56b86e86fd6a5b7c7fc
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
